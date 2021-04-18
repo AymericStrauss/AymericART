@@ -39,6 +39,52 @@ a:hover {
     text-decoration: none;
 }
 
+.scrolldown    {
+    width: 0px;
+    height: 80px;
+padding-bottom: 150px;
+    display: block;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+.mouse {
+        width: 1vw;
+        height: 1vw;
+        background-color: white;
+        display: block;
+        border-radius: 50%;
+        animation: move-wheel 1s linear infinite;
+    }
+
+@keyframes move-wheel {
+
+    0%{
+        opacity: 0;
+        transform: translateY(-3rem)
+    }
+
+    25%{
+        opacity: 1;
+        transform: translateY(-1.5rem)
+    }
+
+
+    75%{
+        opacity: 1;
+        transform: translateY(1.5rem)
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(3rem)
+    }
+
+
+}
+
 p {
     font-size: 16px;
     line-height: 24px;
