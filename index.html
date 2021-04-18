@@ -43,9 +43,14 @@
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
                 <li><a href="#section1">A propos de moi</a></li>
-                <li><a href="#section2">Mes compétences</a></li>
                 <li><a href="#section3">Oeuvres</a></li>
+                <li><a href="#section2">Compétences</a></li>
                 <li><a href="#section4">Contact</a></li>
+
+              </ul>
+              <ul >
+                <li><a href="#" target="_blank">CV</a></li> <!-- METTRE LE CV -->
+                <li><a href="https://drive.google.com/file/d/1P0KdlOrq2fyWRAb2W5wP9akJeoPt9h_M/view?usp=sharing" target="_blank">PORTFOLIO</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -72,13 +77,17 @@
             <h2>A propos de moi</h2>
             <div class="line-dec"></div>
             <span
-              >JE M’APPELLE AYMERIC STRAUSS, 22 ANS ET ÉTUDIANT
-              EN INFORMATION COMMUNICATION À L’UNIVERSITÉ SAVOIE MONT
-              BLANC.</span
+              >ETUDIANT EN INFORMATION ET COMMUNICATION, A LA RECHERCHE D'UNE LICENCE PRO</span
             >
-            <img src="./assets/images/CV.jpg" alt="">
-          <!-- </div>
-          <div class="left-image-post">
+
+           </div>
+           <div class="section-heading">
+           <div class="scrolldown">
+              <div class="mouse"><span></span></div>
+          </div>
+          </div>
+
+          <!--<div class="left-image-post">
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
@@ -131,61 +140,6 @@
       -->
       </section>
 
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Mes compétences</h2>
-            <div class="line-dec"></div>
-            <span
-              > <!-- ici placer liste de compétences --></span
-            >
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML &amp; CSS</h4>
-                <p>
-                  Je suis capable de coder en HTML et CSS pour la réalisation de site web comme celui-ci. 
-                                               
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Adobe</h4>
-                <p>
-                Je maitrise les logiciels de la suite adobe tel que Illustrator,
-                Photoshop mais aussi Première pro et After Effects.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Blender</h4>
-                <p>
-                  Je sais utiliser des logiciels de création 3D tel que Blender et
-                   Solidworks pour réaliser des oeuvres artistiques mais aussi pour
-                    réaliser de la VR.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Dessin</h4>
-                <p>
-                  Je dessine essentiellement au crayon à papier et aux marqueurs type poska.
-                                                                                                                                                                                           
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
@@ -193,7 +147,7 @@
             <div class="line-dec"></div>
             <span
               >Il s'agit ici de quelques oeuvres que j'ai réalisé avec l'aide de différents outils.
-              Vous pouvez retrouver le reste de mes oeuvres et projets sur mon Portfolio :<a href="https://drive.google.com/file/d/1i44XyQvJpanE70jtz6pZJAHiqs_HiUmB/view?usp=sharing"> Cliquez ici</a> </span
+              Vous pouvez retrouver le reste de mes oeuvres et projets sur mon Portfolio :<a href="https://drive.google.com/file/d/1P0KdlOrq2fyWRAb2W5wP9akJeoPt9h_M/view?usp=sharing"> Cliquez ici</a> </span
             >
 
           </div>
@@ -340,6 +294,26 @@
                   </figure>
                 </div>
 
+                <div class="isotope-item" data-type="blender">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/blackhole.jpg"
+                      alt=""
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/blackhole.jpg"
+                        data-lightbox="image-1"
+                        data-title=""
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Blackhole</h4>
+                      <span> Le trou noir a été fait de la même manière que le projet "Dreamin", le trou noir n'est pas visible si on
+                       le laisse tout seul au milieu des étoiles, j'ai donc réalisé son disque d'acrétion autour de lui pour que nous puissions le percevoir.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
 
                 <div class="isotope-item" data-type="illustrator">
                   <figure class="snip1321">
@@ -467,27 +441,88 @@
         </div>
       </section>
 
-      <section class="section contact-me" data-section="section4">
-        <div class="row">
-          <!--  <div class="right-content"> -->
-           <div class="container">
-            <div id="contact">
-              <h2>Contact</h2>
-                <div class="line-dec"></div>
-                   <div id="contact-form">
-                    <form action="https://formspree.io/f/mdoykkev" method="POST">
-                      <input type="hidden" name="_subject" value="Contact request from personal website" />
-                      <input type="email" name="_replyto" placeholder="Votre email" required>
-                      <textarea name="message" placeholder="Ecrivez votre messageType your message" required></textarea>
-                      <button type="submit">Envoyer</button>
-                    </form>
-                  </div>
-                </div>
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Compétences</h2>
+            <div class="line-dec"></div>
+            <span
+              > <!-- ici placer liste de compétences --></span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>HTML &amp; CSS</h4>
+                <p>
+                  Je suis capable de coder en HTML et CSS pour la réalisation de site web comme celui-ci. 
+                                               
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Adobe</h4>
+                <p>
+                Je maitrise les logiciels de la suite adobe tel que Illustrator,
+                Photoshop mais aussi Première pro et After Effects.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Blender</h4>
+                <p>
+                  Je sais utiliser des logiciels de création 3D tel que Blender et
+                   Solidworks pour réaliser des oeuvres artistiques mais aussi pour
+                    réaliser de la VR.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Dessin</h4>
+                <p>
+                  Je dessine essentiellement au crayon à papier et aux marqueurs type poska.
+                                                                                                                                                                                           
+                </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+    <section class="section contact-me" data-section="section4">
+            <div class="row">
+
+               <div class="container">
+                <div id="contact">
+                  <h2>Contact</h2>
+                    <div class="line-dec"></div>
+                       <div id="contact-form">
+                        <form action="https://formspree.io/f/mdoykkev" method="POST">
+                          <input type="hidden" name="_subject" value="Contact request from personal website" />
+                          <input type="email" name="_replyto" placeholder="Votre email" required>
+                          <textarea name="message" placeholder="Ecrivez votre message" required></textarea>
+                          <button type="submit">Envoyer</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
        </section>
-    
+
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
